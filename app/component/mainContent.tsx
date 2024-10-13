@@ -4,7 +4,14 @@ import Link from "next/link";
 import { motion, useScroll } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const TypingText = ({
+interface TypingTextProps {
+  text: string; // Required prop
+  typingSpeed?: number; // Optional prop
+  deletingSpeed?: number; // Optional prop
+  pauseTime?: number; // Optional prop
+}
+
+const TypingText: React.FC<TypingTextProps> = ({
   text,
   typingSpeed = 100,
   deletingSpeed = 50,
@@ -15,7 +22,7 @@ const TypingText = ({
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    let timeout;
+    let timeout: NodeJS.Timeout;
 
     // Typing phase
     if (!isDeleting && currentIndex < text.length) {

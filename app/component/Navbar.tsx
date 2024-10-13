@@ -185,7 +185,7 @@ export default function Navbar() {
             href="/ContactUs"
             className="text-xl font-semibold leading-6 text-skin-secondary"
           >
-            Let's Collaborate{" "}
+            Let&apos;s Collaborate{" "}
             <span className=" text-skin-primary" aria-hidden="true">
               &rarr;
             </span>

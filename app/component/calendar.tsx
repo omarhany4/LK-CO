@@ -95,7 +95,8 @@ export function CalendarDemo() {
                 </PopoverContent>
               </Popover>
               <FormDescription>
-                if there's any change in booking date we will get back to you!
+                if there&apos;s any change in booking date we will get back to
+                you!
               </FormDescription>
               <FormMessage />
             </FormItem>

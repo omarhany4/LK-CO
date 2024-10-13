@@ -1,6 +1,7 @@
 "use client";
 //style css is the styling for framer components
 import "../../style.css";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { getDownloadURL, ref } from "firebase/storage";
 import { auth, storage } from "../../firebaseConfig";
@@ -14,10 +15,11 @@ export default function SignButton() {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser: User | null) => {
       setUser(currentUser);
+      // Optionally fetch user data based on currentUser.uid or other properties
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [auth]);
 
   useEffect(() => {
     const fetchImage = async () => {
@@ -70,9 +72,8 @@ export default function SignButton() {
             whileTap={{ scale: 0.9 }}
             onClick={() => setIsOpen(!isOpen)}
           >
-            <img
-              src={imageUrl}
-              alt="Selected"
+            <image
+              href={imageUrl}
               className="w-20 h-20 object-cover rounded-full"
             />
             <p>omar</p>

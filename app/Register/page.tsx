@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import { useRef, useState } from "react";
 import { ref, uploadBytes } from "firebase/storage";
+import Image from "next/image";
 export default function Example() {
   //firebase states
   const [email, setEmail] = useState("");
@@ -167,9 +168,8 @@ export default function Example() {
                       className="h-20 w-20 text-gray-300"
                     />
                   ) : (
-                    <img
-                      src={image}
-                      alt="Selected"
+                    <image
+                      href={image}
                       className="w-20 h-20 object-cover rounded-full"
                     />
                   )}
@@ -390,8 +390,8 @@ export default function Example() {
               Notifications
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">
-              We'll always let you know about important changes, but you pick
-              what else you want to hear about.
+              We&apos;ll always let you know about important changes, but you
+              pick what else you want to hear about.
             </p>
 
             <div className="mt-10 space-y-10">
