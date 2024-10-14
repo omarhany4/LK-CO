@@ -73,7 +73,7 @@ export default function Example() {
   };
 
   return (
-    <div className="px-64 py-32">
+    <div className="px-6 lg:px-64 py-32">
       <form onSubmit={handleSignup}>
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">
