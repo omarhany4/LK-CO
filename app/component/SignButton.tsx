@@ -147,9 +147,9 @@ export default function SignButton() {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Link href="/Sign" className="text-xl font-semibold  text-gray-900">
+          <a href="/Sign" className="text-xl font-semibold  text-gray-900">
             Login <span aria-hidden="true">→</span>
-          </Link>
+          </a>
         </motion.button>
       )}
     </div>
