@@ -11,7 +11,7 @@ export default function WhyUs() {
         <h2 className="text-center text-lg font-semibold leading-8 text-skin-primary">
           Trusted by the world’s most innovative teams
         </h2>
-        <div className="mx-auto mt-10 grid  place-items-center max-w-lg grid-cols-3   gap-x-8 gap-y-10 sm:max-w-4xl sm:grid-cols-4 sm:gap-x-10 lg:max-w-none lg:grid-cols-5">
+        <div className="mx-auto mt-10 grid  place-items-center max-w-lg grid-cols-1 gap-x-8 gap-y-10 sm:max-w-4xl sm:grid-cols-4 sm:gap-x-10 lg:max-w-none lg:grid-cols-5">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

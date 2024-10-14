@@ -1,6 +1,7 @@
 "use client";
 //style css is the styling for framer components
 import "../../style.css";
+import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { getDownloadURL, ref } from "firebase/storage";
@@ -141,9 +142,15 @@ export default function SignButton() {
           </motion.ul>
         </motion.nav>
       ) : (
-        <a className=" px-10 text-skin-secondary  text-xl" href="/Sign">
-          Log in
-        </a>
+        <motion.button
+          className="flex justify-start px-10 py-2"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <Link href="/Sign" className="text-xl font-semibold  text-gray-900">
+            Login <span aria-hidden="true">→</span>
+          </Link>
+        </motion.button>
       )}
     </div>
   );

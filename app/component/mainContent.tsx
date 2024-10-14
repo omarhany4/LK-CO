@@ -86,20 +86,25 @@ export default function MainContent() {
           cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
           aliqua.
         </p>
-        <div className="mt-10 flex items-center justify-center gap-x-8">
-          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <div className="mt-10 flex  ">
+          <motion.button
+            className="flex justify-end mr-5"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <Link
               href="/"
-              className="rounded-md bg-skin-primary px-3.5 py-2.5 text-xl font-semibold text-white shadow-sm hover:bg-skin-secondary hover:text-skin-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-skin-primary  px-3.5 py-2.5 text-xl font-semibold text-white shadow-sm hover:bg-skin-secondary hover:text-skin-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </Link>
           </motion.button>
-          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <Link
-              href="/"
-              className="text-xl font-semibold leading-6 text-gray-900"
-            >
+          <motion.button
+            className="flex justify-start"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link href="/" className="text-xl font-semibold  text-gray-900">
               Learn more <span aria-hidden="true">→</span>
             </Link>
           </motion.button>

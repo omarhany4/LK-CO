@@ -24,25 +24,25 @@ export default function TabsDemo() {
       <Tabs defaultValue="1" className=" w-full max-w-7xl mb-32 ">
         <TabsList className="grid w-full grid-cols-4 mb-10 bg-skin-inverted ">
           <TabsTrigger
-            className="data-[state=active]:bg-orange-400 rounded-3xl text-xl"
+            className="data-[state=active]:bg-orange-400 text-wrap text-center rounded-3xl text-sm lg:text-xl"
             value="1"
           >
             Lobna The Freelancer
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-orange-400 rounded-3xl text-xl "
+            className="data-[state=active]:bg-orange-400 text-wrap text-center  rounded-3xl text-sm lg:text-xl "
             value="2"
           >
             Lobna The Trainer
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-orange-400 rounded-3xl text-xl"
+            className="data-[state=active]:bg-orange-400 text-wrap text-center  rounded-3xl text-sm lg:text-xl"
             value="3"
           >
             Lobna the manager
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-orange-400 rounded-3xl text-xl"
+            className="data-[state=active]:bg-orange-400 text-wrap text-center rounded-3xl text-sm lg:text-xl"
             value="4"
           >
             Lobna The Advisor

@@ -92,7 +92,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-10 w-10" aria-hidden="true" />
+            <Bars3Icon className="h-16 w-16" aria-hidden="true" />
           </button>
         </div>
         <PopoverGroup className=" hidden marker:backdrop:justify-center items-center lg:flex lg:gap-x-12">
@@ -200,8 +200,8 @@ export default function Navbar() {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10 bg-skin-primary opacity-25" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-50 bg-skin-primary opacity-25" />
+        <DialogPanel className="fixed z-50 inset-y-0 right-0  w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <div className="flex justify-center text-3xl text-skin-primary">
               <a
@@ -226,7 +226,7 @@ export default function Navbar() {
             </div>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 flex justify-end text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -282,6 +282,15 @@ export default function Navbar() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Portofolio
+                </a>
+                <a
+                  href="/ContactUs"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Let&apos;s Collaborate{" "}
+                  <span className=" text-skin-primary" aria-hidden="true">
+                    &rarr;
+                  </span>
                 </a>
               </div>
               <div className="py-6">

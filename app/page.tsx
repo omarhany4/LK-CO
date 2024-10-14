@@ -18,10 +18,10 @@ import { duration } from "@mui/material";
 
 export default function Example() {
   return (
-    <div>
+    <div className="pt-20 lg:pt-4">
       <div className=" bg-skin-inverted ">
         <img src="./images/bg.png" />
-        <div className="mx-auto w-f max-w-2xl py-32 sm:py-24 lg:py-24 align-middle ">
+        <div className="mx-auto w-full max-w-2xl  py-24   ">
           <div className="hidden  sm:flex sm:justify-center">
             <div className="relative border-red-500 rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next round of funding.
